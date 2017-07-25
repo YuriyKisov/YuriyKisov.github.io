@@ -1,0 +1,793 @@
+body {
+  min-width: 1000px;
+}
+.General {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column nowrap;
+}
+.container {
+  width: 1000px;
+  box-sizing: border-box;
+  font-size: 0px;
+  margin: auto;
+}
+.first {
+  display: flex;
+  background-color: #000000;
+  background-image: url(Images/people-pict.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+}
+.first .header {
+  flex-flow: column nowrap;
+}
+.first .header .up {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 41px;
+}
+.first .header .up h2 {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.first .header .up nav {
+  width: 449px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first .header .up nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.first .header .up nav a:first-child {
+  color: #858585;
+}
+.first .header .up nav .twitter-up {
+  display: in-block;
+  width: 15px;
+  height: 12px;
+  background-image: url(Images/twitter-white.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first .header .up nav .facebook-up {
+  display: in-block;
+  width: 9px;
+  height: 16px;
+  background-image: url(Images/facebook-white.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first .header .down {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 251px;
+}
+.first .header .down p {
+  width: 100%;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+}
+.first .header .down h1 {
+  width: 100%;
+  margin-top: 38px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.first .header .down .active {
+  width: 164px;
+  height: 56px;
+  border-radius: 2px 3px 3px 2px;
+  background-color: #e92121;
+}
+.first .header .down .passive {
+  width: 204px;
+  height: 56px;
+  border-radius: 3px 2px 2px 3px;
+  border: 2px solid #ffffff;
+  margin-left: 26px;
+  background-color: transparent;
+}
+.first .header .down button {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 44px;
+  margin-bottom: 258px;
+}
+.first .header .down button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.second {
+  border-bottom: 1px solid #f1f1f1;
+}
+.second .history {
+  margin-top: 99px;
+  margin-bottom: 102px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "name before" "name after";
+  align-items: center;
+  grid-gap: 51px 186px;
+}
+.second .history h1 {
+  width: 292px;
+  color: #464646;
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  grid-area: name;
+}
+.second .history p {
+  width: 451px;
+  height: 167px;
+  overflow: hidden;
+  color: #b7b7b7;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.second .history .before {
+  justify-self: stretch;
+  grid-area: before;
+}
+.second .history .after {
+  grid-area: after;
+  justify-self: stretch;
+}
+.third .question {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "how how how" "ask ask ask" "selected decoration payment" "calendar sucsess love";
+}
+.third .question h1 {
+  width: 245px;
+  margin-top: 108px;
+  justify-self: center;
+  color: #464646;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  grid-area: how;
+}
+.third .question h1:after {
+  content: "";
+  display: block;
+  margin-left: 89px;
+  margin-top: 30px;
+  width: 67px;
+  height: 9px;
+  background-image: url(Images/tooth.png);
+}
+.third .question p {
+  width: 366px;
+  justify-self: center;
+  text-align: center;
+  margin-top: 26px;
+  color: #b7b7b7;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  grid-area: ask;
+}
+.third .question .item {
+  margin-top: 77px;
+}
+.third .question .item h3 {
+  width: 232px;
+  margin-top: 32px;
+  color: #464646;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.third .question .item p {
+  width: 260px;
+  text-align: left;
+  color: #b7b7b7;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.third .question .select {
+  grid-area: selected;
+}
+.third .question .select:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  color: #ea1b1b;
+  display: block;
+  background-image: url(Images/house.png);
+}
+.third .question .decoration {
+  grid-area: decoration;
+}
+.third .question .decoration:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  color: #ea1b1b;
+  display: block;
+  background-image: url(Images/decoration.png);
+}
+.third .question .decoration p {
+  width: 295px;
+}
+.third .question .decoration h3 {
+  width: 134px;
+}
+.third .question .payment {
+  grid-area: payment;
+}
+.third .question .payment:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  display: block;
+  background-image: url(Images/payment.png);
+}
+.third .question .calendar {
+  grid-area: calendar;
+}
+.third .question .calendar:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  color: #ea1b1b;
+  display: block;
+  background-image: url(Images/calendar.png);
+}
+.third .question .calendar h3 {
+  width: 247px;
+}
+.third .question .sucsess {
+  grid-area: sucsess;
+}
+.third .question .sucsess:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  color: #ea1b1b;
+  display: block;
+  background-image: url(Images/success.png);
+}
+.third .question .sucsess h3 {
+  width: 266px;
+}
+.third .question .love {
+  margin-bottom: 96px;
+  grid-area: love;
+}
+.third .question .love:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  baccolor: #ea1b1b;
+  display: block;
+  background-image: url(Images/heart.png);
+  background-repeat: no-repeat;
+}
+.fourth {
+  background-color: #faf9f9;
+}
+.fourth .buy {
+  margin-top: 110px;
+  margin-bottom: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "ring mercure";
+  grid-gap: 110px 78px;
+}
+.fourth .ring {
+  display: block;
+  width: 400px;
+  height: 400px;
+  background-image: url(Images/ring.png);
+  grid-area: ring;
+}
+.fourth .mercure {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-area: mercure;
+}
+.fourth .mercure h1 {
+  width: 109px;
+  margin-top: 52px;
+  color: #464646;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.fourth .mercure h1:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  margin-top: 24px;
+  width: 67px;
+  height: 9px;
+  background-image: url(Images/tooth.png);
+}
+.fourth .mercure p {
+  width: 430px;
+  color: #b7b7b7;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.fourth .mercure .get {
+  width: 164px;
+  height: 56px;
+  border-radius: 2px 3px 3px 2px;
+  background-color: #e92121;
+}
+.fourth .mercure .get a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.fifth .choose {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 1fr 215px 217px;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "choose simplicity hardmade" "choose uniqueness Trust";
+  grid-row-gap: 77px;
+  grid-column-gap: 105px;
+  align-items: center;
+  padding-top: 99px;
+  padding-bottom: 100px;
+}
+.fifth .choose h1 {
+  width: 186px;
+  grid-area: choose;
+  color: #464646;
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.fifth .choose div h1 {
+  width: 81px;
+  color: #464646;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.fifth .choose div p {
+  width: 215px;
+  color: #b7b7b7;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 21px;
+}
+.fifth .choose .simplicity {
+  grid-area: simplicity;
+}
+.fifth .choose .hardmade {
+  grid-area: hardmade;
+}
+.fifth .choose .uniqueness {
+  grid-area: uniqueness;
+}
+.fifth .choose .uniqueness h1 {
+  width: 128px;
+}
+.fifth .choose .Trust {
+  grid-area: Trust;
+}
+.sixth .fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  align-items: end;
+  grid-template-areas: "ring-first ring-second ring-third ring-fourth" "ring-fifth ring-sixth juwelery juwelery" "content-le content-le content-ri content-ri";
+}
+.sixth .fotos .ring {
+  display: flex;
+  width: 100%;
+  height: 235px;
+  box-sizing: border-box;
+  background: radial-gradient(circle at center, #fdfdfd, #ebebeb);
+}
+.sixth .fotos .ring .item {
+  width: 172px;
+  height: 172px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 35px 35px #ffffff;
+  margin: auto;
+}
+.sixth .fotos .ring .ring-first {
+  background-image: url(Images/ring-1.png);
+  grid-area: ring-first;
+}
+.sixth .fotos .ring .ring-second {
+  background-image: url(Images/ring-2.png);
+  grid-area: ring-second;
+}
+.sixth .fotos .ring .ring-third {
+  background-image: url(Images/ring-3.png);
+  grid-area: ring-third;
+}
+.sixth .fotos .ring .ring-fourth {
+  background-image: url(Images/ring-4.png);
+  grid-area: ring-fourth;
+}
+.sixth .fotos .ring .ring-fifth {
+  background-image: url(Images/ring-5.png);
+  grid-area: ring-fifth;
+}
+.sixth .fotos .ring .ring-sixth {
+  width: 235px;
+  height: 160px;
+  background-image: url(Images/ring-6.png);
+  grid-area: ring-sixth;
+}
+.sixth .fotos h1 {
+  width: 235px;
+  color: #464646;
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  grid-area: juwelery;
+  margin-left: 44px;
+}
+.sixth .fotos h1:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  margin-top: 24px;
+  width: 67px;
+  height: 9px;
+  background-image: url(Images/tooth.png);
+}
+.sixth .fotos p {
+  width: 421px;
+  margin-top: 53px;
+  color: #b7b7b7;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 100px;
+}
+.sixth .fotos .left-cont {
+  grid-area: content-le;
+}
+.sixth .fotos .right-cont {
+  grid-area: content-ri;
+  margin-left: 43px;
+}
+.seventh {
+  background-color: #faf9f9;
+}
+.seventh .comments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  justify-content: end;
+  grid-template-areas: "comment comment comment" "asks asks asks" "Demichev Topanic Usina" "Serdyuk Kulikov Tikhonov";
+}
+.seventh .comments h1 {
+  color: #464646;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  grid-area: comment;
+  justify-self: center;
+  margin-top: 79px;
+}
+.seventh .comments h1:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  margin-left: 176px;
+  margin-top: 24px;
+  width: 67px;
+  height: 9px;
+  background-image: url(Images/tooth.png);
+}
+.seventh .comments .asks {
+  color: #b7b7b7;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  grid-area: asks;
+  justify-self: center;
+  margin-top: 26px;
+  margin-bottom: 100px;
+}
+.seventh .comments .avtor {
+  display: block;
+  margin-left: 62px;
+}
+.seventh .comments .avtor h4 {
+  display: inline-block;
+  width: 164px;
+  color: #464646;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.seventh .comments .avtor h4:before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 38px;
+  height: 38px;
+  margin-left: -62px;
+  margin-right: 24px;
+  border-radius: 50%;
+  background-image: url(Images/coma.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-color: #ea1b1b;
+}
+.seventh .comments .avtor p {
+  width: 238px;
+  color: #b7b7b7;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.seventh .comments .Demichev {
+  grid-area: Demichev;
+}
+.seventh .comments .Topanic {
+  grid-area: Topanic;
+}
+.seventh .comments .Usina {
+  grid-area: Usina;
+}
+.seventh .comments .Serdyuk {
+  grid-area: Serdyuk;
+  margin-top: 99px;
+  margin-bottom: 110px;
+}
+.seventh .comments .Kulikov {
+  grid-area: Kulikov;
+  margin-top: 99px;
+  margin-bottom: 110px;
+}
+.seventh .comments .Tikhonov {
+  grid-area: Tikhonov;
+  margin-top: 99px;
+  margin-bottom: 110px;
+}
+.eighth .nature {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, auto);
+  align-items: end;
+  grid-template-areas: "water mauntenes ocean river" "photoblog photoblog trees car" "first first second second";
+  padding-top: 100px;
+  padding-bottom: 96px;
+}
+.eighth .nature .foto {
+  display: block;
+  width: 100%;
+  height: 235px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.eighth .nature .water {
+  background-image: url(Images/foto-1.png);
+  grid-area: water;
+}
+.eighth .nature .mauntenes {
+  background-image: url(Images/foto-2.png);
+  grid-area: mauntenes;
+}
+.eighth .nature .ocean {
+  background-image: url(Images/foto-3.png);
+  grid-area: ocean;
+}
+.eighth .nature .river {
+  background-image: url(Images/foto-4.png);
+  grid-area: river;
+}
+.eighth .nature .trees {
+  background-image: url(Images/foto-5.png);
+  grid-area: trees;
+}
+.eighth .nature .car {
+  background-image: url(Images/foto-6.png);
+  grid-area: car;
+}
+.eighth .nature h1 {
+  width: 274px;
+  color: #464646;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  grid-area: photoblog;
+}
+.eighth .nature h1:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  margin-top: 56px;
+  width: 67px;
+  height: 9px;
+  background-image: url(Images/tooth.png);
+}
+.eighth .nature p {
+  width: 419px;
+  height: 167px;
+  overflow: hidden;
+  color: #b7b7b7;
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 55px;
+}
+.eighth .nature .phase-first {
+  grid-area: first;
+}
+.eighth .nature .phase-second {
+  grid-area: second;
+  justify-self: end;
+}
+.nineth {
+  background-color: #141414;
+}
+.nineth .footer {
+  display: block;
+}
+.nineth .footer .upper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 78px;
+  margin-bottom: 78px;
+}
+.nineth .footer .upper h1 {
+  width: 118px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.nineth .footer .upper .social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 125px;
+}
+.nineth .footer .upper .social li a {
+  display: block;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.nineth .footer .upper .social li .facebook {
+  width: 13px;
+  height: 23px;
+  background-image: url(Images/facebook.png);
+}
+.nineth .footer .upper .social li .twitter {
+  width: 22px;
+  height: 18px;
+  background-image: url(Images/twitter.png);
+}
+.nineth .footer .upper .social li .dribbble {
+  width: 23px;
+  height: 22px;
+  background-image: url(Images/dribble.png);
+}
+.nineth .footer .upper .social li .google {
+  width: 13px;
+  height: 22px;
+  background-image: url(Images/google.png);
+}
+.nineth .footer .lower {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas: "production shipping . copyright";
+  margin-bottom: 75px;
+  grid-gap: 0px 56px;
+}
+.nineth .footer .lower .left-block {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 164px;
+  height: 89px;
+  grid-area: production;
+}
+.nineth .footer .lower .left-block li a {
+  text-decoration: none;
+  color: #474747;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.nineth .footer .lower .left-block li:first-child {
+  text-decoration: underline;
+}
+.nineth .footer .lower .right-block {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 146px;
+  height: 89px;
+  grid-area: shipping;
+}
+.nineth .footer .lower .right-block li a {
+  text-decoration: none;
+  color: #474747;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.nineth .footer .lower h2 {
+  text-align: right;
+  width: 187px;
+  color: #353434;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  grid-area: copyright;
+}
