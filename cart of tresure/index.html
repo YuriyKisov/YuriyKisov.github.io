@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+
+<div class="cart"></div>
+
+
+<script type="text/javascript">
+	
+	
+function random (min, max) {
+	var calc1 = min + Math.random()*(max + 1 - min);
+	calc1 = Math.floor(calc1);
+	return calc1;
+}
+
+function ran (min, max) {
+	var calc2 = min + Math.random()*(max + 1 - min);
+	calc2 = Math.floor(calc2);
+	return calc2;
+}
+
+ function gipotenuza () {
+ 	var gip = Math.sqrt((Math.pow(a, 2)) + (Math.pow(b, 2)));
+ 	return gip;
+ }
+ var a = random (0, 1000);
+ var b = ran (0, 700);
+ var gip = gipotenuza (a, b);
+
+	var tresure = document.getElementsByClassName("cart");
+		for (var i = 0; i < tresure.length; i++) {
+			tresure[i].addEventListener("click", function() {
+					a = event.offsetX;
+					b = event.offsetY;
+				var c = Math.sqrt((Math.pow(a, 2)) + (Math.pow(b, 2)));
+				var lang = Math.abs(gip - c);
+		if (lang <= 10) {
+			alert("Поздравляем!!!! Вы нашли клад");
+			return;
+		}
+
+		if (lang <= 50 && lang > 10) {
+			alert("Вы близко от цели - Горяче");
+			return;
+		}
+
+		if (lang <= 100 && lang > 50) {
+			alert("Тепло");
+			return;
+		}
+
+		if (lang > 100) {
+			alert("Холодно");
+			return;
+		}
+});	
+}
+
+</script>
+
+</body>
+</html>
